@@ -1,0 +1,41 @@
+/*重置样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, div , header , main , nav ,footer{ margin:0; padding:0; box-sizing: border-box;}
+fieldset, img { border:none; }
+img{vertical-align: middle;}
+em,i,b,strong{ font-style:normal; font-weight:normal; }
+ul, ol, li { list-style:none; } 
+a {text-decoration:none; }
+.top-header{
+	width: 100%;
+    height: 44px;
+    .nav{
+	    width: 990px;
+	    height: 44px;
+	    margin: auto;
+	    .middle{
+	    	width: 1100px;
+    		margin: 0 auto;
+    		.nav_left{
+    			float: left;
+			    height: 44px;
+			    width: 770px;
+			    border-left: 2px solid #fff;
+			    border-right: 2px solid #fff;
+			    position: relative;
+			    li{
+			    	height: 44px;
+		    	    float: left;
+				    z-index: 98;
+				    position: relative;
+				    
+			    }
+    		}
+    		.nav_right{
+    			float: left;
+			    width: 202px;
+			    height: 44px;
+			    border-right: 2px solid #fff;
+    		}
+	    }
+    }
+}
