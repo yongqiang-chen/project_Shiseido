@@ -27,7 +27,15 @@ a {text-decoration:none; }
 		    	    float: left;
 				    z-index: 98;
 				    position: relative;
-				    
+				    padding: 0 9px;
+				    font-size: 14px;
+				    line-height: 44px;
+				    a{
+				    	color: black;
+				    	&:hover{
+				    		color: purple;
+				    	};
+				    }
 			    }
     		}
     		.nav_right{
@@ -35,6 +43,33 @@ a {text-decoration:none; }
 			    width: 202px;
 			    height: 44px;
 			    border-right: 2px solid #fff;
+			    .search{
+			    	width: 180px;
+				    height: 28px;
+				    border: solid 1px #d8d8d8;
+				    background: #fff;
+				    margin: 8px auto 0 auto;
+				    display: block;
+				    .input-txt{
+				    	width: 147px;
+					    height: 24px;
+					    padding-left: 7px;
+					    border: 0;
+					    line-height: 24px;
+					    color: #861b21;
+					    float: left;
+				    }
+				    .btn-search{
+				    	width: 24px;
+					    height: 24px;
+					    background: url(/images/home_20.jpg);
+					    border: 0 none!important;
+					    cursor: pointer;
+					    font-weight: normal;
+					    outline: thin none transparent;
+					    float: left;
+				    }
+			    }
     		}
 	    }
     }
