@@ -3,10 +3,34 @@
 	"res_msg":"success",
 	"res_body":{
 		"list" : [
-			{"img": "images/hot01.png", "title":"新上市<br>时光琉璃御藏臻萃奢养夜霜"},
+			{"img": "images/hot01.png", "title":"新上市 时光琉璃御藏臻萃奢养夜霜"},
 			{"img": "images/hot02.png", "title":"小针管”悦薇珀翡塑颜抗皱霜"},
 			{"img": "images/hot03.png", "title":"红妍肌活精华露 50mL"},
 			{"img": "images/hot04.png", "title":"新艳阳夏水动力修颜防晒乳（自然色）"}
+		],
+		"hotgoods" : [
+			{"img": "images/pro_1.jpg", "title": "红妍肌活精华露", "unit": "50ml", "price": "￥860"},
+			{"img": "images/pro_2.jpg", "title": "百优丰盈提拉紧致眼霜", "unit": "15ml", "price": "￥590"},
+			{"img": "images/pro_3.jpg", "title": "男士滋润乳", "unit": "100ml", "price": "￥280"},
+			{"img": "images/pro_4.png", "title": "悦薇珀翡紧颜亮肤乳(滋润型)", "unit": "100ml", "price": "￥760"},
+			{"img": "images/pro_5.jpg", "title": "新艳阳夏臻效水动力防护乳", "unit": "50ml", "price": "￥380"}
+		],
+		"list-pord" : [
+			{"img": "/images/b (1).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/b (2).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/b (3).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/b (4).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/b (5).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/b (6).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/b (7).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/b (8).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/b (9).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/b (10).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/pro_1.jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/pro_2.jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/pro_3.jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/pro_4.jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
+			{"img": "/images/pro_5.jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"}
 		]
 	}
 }

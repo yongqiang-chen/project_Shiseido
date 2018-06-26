@@ -5,3 +5,89 @@ img{vertical-align: middle;}
 em,i,b,strong{ font-style:normal; font-weight:normal; }
 ul, ol { list-style:none; } 
 a {text-decoration:none; }
+
+.page_signin{
+	width: 423px;
+	height: 323px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 20px;
+	text-align: center;
+	h3{
+		font-weight: normal;
+	}
+	.p1{
+		width: 100%;
+	    line-height: 44px;
+	    font-size: 14px;
+	    text-align: center;
+	    overflow: hidden;
+	    padding: 0;
+	    margin-bottom: -10px;
+	}
+	.login-user{
+		width: 175px;
+	    height: 27px;
+	    margin: 40px auto;
+	    position: relative;
+	    .input_txt{
+			display: block;
+		    width: 165px;
+		    height: 24px;
+		    padding-left: 3px;
+		    border: 1px solid #ccc;
+		    color: #666;
+		    line-height: 24px;
+		    overflow: hidden;
+		    padding: 0 0 0 3px;
+		}
+		.phone{
+			font-size: 12px;
+			position: absolute;
+			top: 28px;
+			left:0;
+			color: red;
+		}
+	}
+	.login-mima{
+		width: 175px;
+	    height: 27px;
+	    margin: 40px auto;
+	    position: relative;
+	    .input_txt{
+			display: block;
+		    width: 165px;
+		    height: 24px;
+		    padding-left: 3px;
+		    border: 1px solid #ccc;
+		    color: #666;
+		    line-height: 24px;
+		    overflow: hidden;
+		    padding: 0 0 0 3px;
+		}
+		.password{
+			font-size: 12px;
+			position: absolute;
+			top: 28px;
+			left:0;
+			color: red;
+		}
+	}
+
+	.submit{
+	    display: block;
+	    width: 86px;
+	    height: 29px;
+	    background: #9e1503;
+	    margin: 50px auto;
+	    cursor: pointer;
+	    text-align: center;
+	    color: #fff;
+	    line-height: 29px;
+	    overflow: hidden;
+	    margin-bottom: 25px;
+	    border: none;
+	}
+}

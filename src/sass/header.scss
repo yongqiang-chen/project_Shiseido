@@ -46,6 +46,9 @@
     					line-height: 34px;
 					    height: 34px;
 					    color: white;
+                        &:hover{
+                            color: red;
+                        };
     				}
     			}
     		}
