@@ -3,7 +3,7 @@ require(["config"],function(){
 		
 		// 首页轮播图
 		$(".banner").carousel({
-			duration: 2000,
+			duration: 3000,
 			imgs: [
 				{href: "#", src: "images/banner01.jpg"},
 				{href: "#", src: "images/banner02.jpg"},

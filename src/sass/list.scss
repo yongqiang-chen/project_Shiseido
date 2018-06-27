@@ -9,9 +9,9 @@ a {text-decoration:none; }
 
 .container{
 	width: 842px;
-	min-height: 1000px;
+	min-height: 2300px;
 	margin: 40px auto;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	.product{
 		width: 280px;
 		height: 462px;
@@ -77,5 +77,21 @@ a {text-decoration:none; }
 		    line-height: 35px;
 		    font-size: 12px;
 		}
+	}
+}
+
+.sidebar{
+	width:16px;
+	height:100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	.cart{
+		width: 16px;
+		height: 25px;
+		position: absolute;
+		top:200px;
+		left: 0;
+		background: url(/images/home_05.jpg) no-repeat;
 	}
 }

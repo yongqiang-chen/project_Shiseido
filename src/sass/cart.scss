@@ -5,3 +5,109 @@ img{vertical-align: middle;}
 em,i,b,strong{ font-style:normal; font-weight:normal; }
 ul, ol { list-style:none; } 
 a {text-decoration:none; }
+
+
+.shopping{
+	height: auto!important;
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 18px;
+    margin-bottom: 20px;
+    color: #252525;
+    h3{
+	    background: #ba2620;
+	    width: 163px;
+    	height: 40px;
+    	text-align: center;
+	    line-height: 40px;
+	    font-size: 14px;
+	    color: #fff;
+	    font-weight: normal;
+    }
+    .cart_container{
+    	width: 955px;
+    	margin: 0 auto;
+    	padding-top: 20px;
+    	#cart_main{
+			width: 955px;
+			text-align: center;
+			font-size: 16px;
+		    border-collapse: collapse;
+    		border-spacing: 0;
+			thead{
+				background: #fff;
+				padding-bottom: 10px;
+			    display: table-header-group;
+			    vertical-align: middle;
+			    border-color: inherit;
+				tr{
+					th{
+						height: 36px;
+					    line-height: 36px;
+					    border-top: 1px solid #7c0d02;
+					    border-bottom: 4px solid #7c0d02;
+					    color: #670205;
+					    font-size: 16px; 
+					}				    
+				}
+			}
+			tbody{
+				border-bottom: 1px solid #7c0d02;
+				display: table-row-group;
+			    vertical-align: middle;
+			    border-color: inherit;
+			    tr{
+			    	td{
+			    		vertical-align: middle;
+					    text-align: center;
+					    padding: 20px 0;
+					    border-bottom: 1px dotted #ccc;
+			    	}
+			    	img{
+					   	width: 105px;
+					    height: 105px;
+					    padding: 5px;
+					    vertical-align: middle;
+					    font-size: 0;
+					    line-height: 0;
+					    overflow: hidden;
+					    border: 1px solid #ccc;
+			   		} 
+			    	.desc{
+					   	color: #333;
+    					font-size: 16px;
+				    }
+				   	.price,.sub{
+					   	font-size: 14px;
+					    color: #670205;
+					    font-weight: 600;
+				        vertical-align: middle;
+					    text-align: center;
+					    padding: 20px 0;
+				    }
+				    span{
+				    	border: 1px solid #ccc;
+				    	height: 25px;
+				    	line-height: 22px;
+				    	margin:0 2px;
+				    	display: inline-block;
+						cursor: pointer;
+				    }
+				    input{
+				    	width: 40px;
+					    height: 22px;
+					    margin: 0;
+					    text-align: center;
+					    font-size: 16px;
+				    }
+					a{
+						color: #000;
+						&:hover{
+							color:red;
+						};
+					}
+			    }
+			}
+		}
+    }
+}

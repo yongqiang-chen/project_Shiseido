@@ -10,6 +10,62 @@
 <body>
 	<div class="header"></div>
 
+	<div class="shopping">
+		<h3>购物车</h3>
+		<div class="cart_container">
+				<table id="cart_main">
+					<thead>
+						<tr>
+							<th>图片</th>
+							<th>描述</th>
+							<th>单价（元）</th>
+							<th>数量</th>
+							<th>小计（元）</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- <tr data-id="{{prod.id}}">
+						 	<td><input type="checkbox" class="ck_prod"></td>
+						 	<td class="id">{{ prod.id }}</td>
+						 	<td><img src="../images/b (1).jpg" class="img"></td>
+						 	<td class="desc">青春日和去角质洁面乳（豆腐磨砂膏）</td>
+						 	<td class="price">￥260</td>
+						 	<td><span class="minus">-</span><input type="text" value="1" size="2" class="amount"><span class="add">+</span></td>
+						 	<td class="sub">￥260</td>
+						 	<td><a href="javascript:void(0);" class="del">删除</a></td>
+						 </tr>
+						 <tr data-id="{{prod.id}}">
+						 	<td><input type="checkbox" class="ck_prod"></td>
+						 	<td class="id">{{ prod.id }}</td>
+						 	<td><img src="../images/b (1).jpg" class="img"></td>
+						 	<td class="desc">青春日和去角质洁面乳（豆腐磨砂膏）</td>
+						 	<td class="price">￥260</td>
+						 	<td><span class="minus">-</span><input type="text" value="1" size="2" class="amount"><span class="add">+</span></td>
+						 	<td class="sub">￥260</td>
+						 	<td><a href="javascript:void(0);" class="del">删除</a></td>
+						 </tr> --> 
+					</tbody>
+				</table>
+		</div>
+	</div>
+
+	<!-- 使用 artTemplate 模板引擎语法来定义模板 -->
+	<script type="text/html" id="cart_template">
+		{{each products prod}}
+		<tr data-id="{{prod.id}}">
+			<!-- <td><input type="checkbox" class="ck_prod"></td>
+			<td class="id">{{ prod.id }}</td> -->
+			<td><img src="{{prod.img}}" class="img"></td>
+			<td class="desc">{{prod.desc}}</td>
+			<td class="price">￥{{prod.price}}</td>
+			<td><span class="minus">-</span><input type="text" value="{{prod.amount}}" size="2" class="amount"><span class="add">+</span></td>
+			<td class="sub">￥{{(prod.price*prod.amount).toFixed(2)}}</td>
+			<td><a href="javascript:void(0);" class="del">删除</a></td>
+		</tr>
+		{{/each}}
+	</script>
+
 	<div class="footer"></div>
 
 	<script type="text/javascript" src="../lib/requirejs/require.js" data-main="../js/cart"></script>

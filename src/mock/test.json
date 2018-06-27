@@ -15,22 +15,22 @@
 			{"img": "images/pro_4.png", "title": "悦薇珀翡紧颜亮肤乳(滋润型)", "unit": "100ml", "price": "￥760"},
 			{"img": "images/pro_5.jpg", "title": "新艳阳夏臻效水动力防护乳", "unit": "50ml", "price": "￥380"}
 		],
-		"list-pord" : [
-			{"img": "/images/b (1).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/b (2).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/b (3).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/b (4).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/b (5).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/b (6).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/b (7).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/b (8).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/b (9).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/b (10).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/pro_1.jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/pro_2.jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/pro_3.jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/pro_4.jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"},
-			{"img": "/images/pro_5.jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "￥260"}
+		"list_pord" : [
+			{"id": "1","img": "/images/b (1).jpg", "title": "青春日和去角质洁面乳（豆腐磨砂膏）", "unit": "75ml", "price": "260"},
+			{"id": "2","img": "/images/b (2).jpg", "title": "青春日和净透卸妆啫喱（蜂蜜卸妆洁面）", "unit": "125ml", "price": "165"},
+			{"id": "3","img": "/images/b (3).jpg", "title": "青春日和保湿凝霜（胡萝卜面霜）", "unit": "150ml", "price": "200"},
+			{"id": "4","img": "/images/b (4).jpg", "title": "青春日和保湿控油凝露（枇杷控油露）", "unit": "100ml", "price": "220"},
+			{"id": "5","img": "/images/b (5).jpg", "title": "亲肤净澈洁面", "unit": "75ml", "price": "120"},
+			{"id": "6","img": "/images/b (6).jpg", "title": "盼丽风姿抗皱洁面膏", "unit": "120ml", "price": "105"},
+			{"id": "7","img": "/images/b (7).jpg", "title": "时光琉璃御藏丰润洁面乳", "unit": "128ml", "price": "180"},
+			{"id": "8","img": "/images/b (8).jpg", "title": "新透白美肌臻白祛斑精粹水", "unit": "50ml", "price": "260"},
+			{"id": "9","img": "/images/b (9).jpg", "title": "新透白美肌夜间祛斑柔护乳", "unit": "155ml", "price": "238"},
+			{"id": "10","img": "/images/b (10).jpg", "title": "新漾美肌焕颜睡眠面膜", "unit": "85ml", "price": "180"},
+			{"id": "11","img": "/images/pro_1.jpg", "title": "百优丰盈提拉紧致眼霜", "unit": "75ml", "price": "178"},
+			{"id": "12","img": "/images/pro_2.jpg", "title": "悦薇珀翡塑颜抗皱霜", "unit": "120ml", "price": "166"},
+			{"id": "13","img": "/images/pro_3.jpg", "title": "红色蜜露精华化妆液", "unit": "70ml", "price": "250"},
+			{"id": "14","img": "/images/pro_4.png", "title": "红妍肌活精华露", "unit": "105ml", "price": "160"},
+			{"id": "15","img": "/images/pro_5.jpg", "title": "悦薇珀翡紧颜亮肤水", "unit": "50ml", "price": "75"}
 		]
 	}
 }
