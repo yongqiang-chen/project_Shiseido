@@ -40,27 +40,31 @@ require(["config"],function(){
 				}
 			});
 			$("#apply").on("click", function(){
-				$.cookie.json = true;
-				var users = $.cookie("users")|| [];
-				if(_phone && _password){
-					console.log(users);
-					var current = {
-						username:_phone,
-						password:_password
-					};
-					for(var k = 0;k < users.length;k++){
-						if(_phone == users[k].username){
-							alert("该用户已注册");
-							return;
-						}
-					}
-					alert("注册成功");
-					users.push(current);
-					$.cookie("users",users,{expires:7,path:"/"});
-					$(location).attr("href","/html/login.html");
-				}else{
-					alert("请重新输入你的电话和密码");
-				}
+				/*cookie方式注册*/
+				// $.cookie.json = true;
+				// var users = $.cookie("users")|| [];
+				// if(_phone && _password){
+				// 	console.log(users);
+				// 	var current = {
+				// 		username:_phone,
+				// 		password:_password
+				// 	};
+				// 	for(var k = 0;k < users.length;k++){
+				// 		if(_phone == users[k].username){
+				// 			alert("该用户已注册");
+				// 			return;
+				// 		}
+				// 	}
+				// 	alert("注册成功");
+				// 	users.push(current);
+				// 	$.cookie("users",users,{expires:7,path:"/"});
+				// 	$(location).attr("href","/html/login.html");
+				// }else{
+				// 	alert("请重新输入你的电话和密码");
+				// }
+
+				/*数据库方式*/
+				$.post("http://localhost/");
 			});
 		});
 	});	

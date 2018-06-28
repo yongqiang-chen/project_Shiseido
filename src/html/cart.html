@@ -46,6 +46,22 @@
 						 	<td><a href="javascript:void(0);" class="del">删除</a></td>
 						 </tr> --> 
 					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2" class="tfoot_left">
+								<div class="order-btn-cons">
+									<span class="total_price">
+										总价（元）：
+										<span id="total-price"></span>
+									</span>
+								</div>
+							</td>
+							<td colspan="4" class="tfoot_right">
+								<a href="#">继续购物</a>
+								<button id="cart_submit">去结算</button>
+							</td>
+						</tr>
+					</tfoot>
 				</table>
 		</div>
 	</div>
@@ -53,14 +69,14 @@
 	<!-- 使用 artTemplate 模板引擎语法来定义模板 -->
 	<script type="text/html" id="cart_template">
 		{{each products prod}}
-		<tr data-id="{{prod.id}}">
+		<tr data-id="{{prod.id}}" class="prod_tr">
 			<!-- <td><input type="checkbox" class="ck_prod"></td>
 			<td class="id">{{ prod.id }}</td> -->
 			<td><img src="{{prod.img}}" class="img"></td>
-			<td class="desc">{{prod.desc}}</td>
-			<td class="price">￥{{prod.price}}</td>
+			<td class="desc">{{prod.title}}</td>
+			<td class="price">{{prod.price}}</td>
 			<td><span class="minus">-</span><input type="text" value="{{prod.amount}}" size="2" class="amount"><span class="add">+</span></td>
-			<td class="sub">￥{{(prod.price*prod.amount).toFixed(2)}}</td>
+			<td class="sub">{{(prod.price*prod.amount).toFixed(2)}}</td>
 			<td><a href="javascript:void(0);" class="del">删除</a></td>
 		</tr>
 		{{/each}}

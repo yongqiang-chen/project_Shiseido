@@ -14,8 +14,8 @@ require(["config"],function(){
 										.find("img").attr("src", product.img)
 										.parents(".p_img").next(".p_title")
 										.text(product.title).next(".p_unit")
-										.text(product.unit).next(".p_price")
-										.text("￥"+product.price).siblings(".id")
+										.text(product.unit).next(".p_price").children("span")
+										.text(product.price).parent(".p_price").siblings(".id")
 										.text(product.id);
 				});
 			},
@@ -28,15 +28,17 @@ require(["config"],function(){
 		$(".container").on("click", ".add_cart", function(e){
 			//获取当前点击的“加入购物车”所在大盒子
 			var box = $(this).parent();
+			
 			//将当前选购商品信息保存到对象中
 			var currentProduct = {
 				id : box.children(".id").text(),
-				price : box.children(".p_price").text(),
+				price : box.children(".p_price").children("span").text(),
 				title : box.children(".p_title").text(),
 				unit : box.children(".p_unit").text(),
 				img : box.children(".p_img").children("img").attr("src"),
 				amount : 1
 			};
+			
 			//配置cookie使用，自动json转换
 			$.cookie.json = true;
 			//先读取已有的购物车cookie
@@ -66,7 +68,10 @@ require(["config"],function(){
 					height : 0
 				}
 			});
-
+			//修改右上角已选购商品件数
+			var num = $(".op-cart-number").text();
+			num++;
+			$(".op-cart-number").text(num);
 		});
 
 		//判断某ID商品是否已经选购过

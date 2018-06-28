@@ -1,0 +1,92 @@
+/*重置样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, div , header , main , nav ,footer{ margin:0; padding:0; box-sizing: border-box;}
+fieldset, img { border:none; }
+img{vertical-align: middle;}
+em,i,b,strong{ font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; } 
+a {text-decoration:none; }
+
+.container{
+	width: 980px;
+	min-height:100px;
+	height: auto !important;
+	background: yellow;
+	margin: 40px auto;
+	overflow: hidden;
+	.shopping-step-item{
+		margin: 10px 5px 0 0;
+	    padding: 0;
+	    width: 163px;
+	    height: 40px;
+	    text-align: center;
+	    line-height: 40px;
+	    font-size: 14px;
+	    color: #fff;
+	    background: #ba2620;
+	}
+	.shopping-title{
+		height: 44px;
+	    border-top: 1px solid #7c0d02;
+	    border-bottom: 4px solid #7c0d02;
+	    margin: 18px auto 20px;
+	    width: 955px;
+	    h1{
+    	    font-size: 16px;
+		    font-weight: 400;
+		    color: #670205;
+		    border: 0;
+		    line-height: 44px;
+		    padding-left: 10px;
+	    }
+	}
+	.order_main{
+		padding: 0 15px 0;
+	    width: 955px;
+	    margin: 18px auto 20px;
+	    border: 1px solid #a8a9ad;
+	    .order-tab-title{
+    	    height: 38px;
+		    line-height: 38px;
+		    color: #670205;
+		    font-size: 16px;
+		    border-bottom: 1px solid #7c0d02;
+		    background: 0;
+		    padding: 4px 0 4px 10px;
+		    b{
+		    	font-size: 16px;
+		    	padding-right: 20px;
+    			font-weight: normal;
+    			line-height: 38px;
+    			color: #670205;
+		    }
+	    }
+	    .order-tab-content{
+	    	.add_new_addr{
+	    		border-top: 4px solid #ddc4c5;
+    			padding: 20px;
+    			span{
+    				padding: 0 15px;
+				    width: auto;
+				    cursor: pointer;
+				    height: 36px;
+				    line-height: 36px;
+				    font-size: 14px;
+				    display: inline-block;
+				    color: #fff;
+				    background: #7c0d02;
+				    text-align: center;
+				    text-decoration: none!important;
+				    vertical-align: middle;
+				    border: 1px solid #ba291f;
+    			}
+	    	}
+	    	.fill-shipping{
+    		    width: 100%;
+    		    margin: 0 auto;
+    		    border-color: grey;
+    		    
+	    	}
+	    }
+	}
+
+}

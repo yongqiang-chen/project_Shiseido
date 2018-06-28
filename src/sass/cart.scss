@@ -108,6 +108,77 @@ a {text-decoration:none; }
 					}
 			    }
 			}
+			tfoot{
+				background: #fff;
+				padding-bottom: 10px;
+			    display: table-header-group;
+			    vertical-align: middle;
+			    border-color: inherit;
+				tr{	
+					width: 955px;
+					border-bottom: 4px solid #7c0d02;
+					td{
+						height: 36px;
+					    line-height: 36px;
+					    border-top: 1px solid #7c0d02;
+					   	padding: 20px 0 5px;
+					    color: #670205;
+					    font-size: 16px; 
+					}	
+					.tfoot_left{
+						text-align: left!important;
+						color: #252525;
+						.order-btn-cons{
+							padding: 0 0 20px 0;
+						    clear: both;
+						    text-align: left;
+						    .total_price{
+						    	font-size: 14px;
+    							color: #000;
+    							#total-price{
+									padding: 0 50px;
+								    color: #670205;
+								    font-size: 18px;
+    							}
+						    }
+						}
+					}
+					.tfoot_right{
+						padding: 20px 0 5px;
+    					border: 0;
+    					text-align: right;
+    					vertical-align: middle;
+    					a{
+    						display: inline-block;
+						    width: 112px;
+						    height: 30px;
+						    text-align: center;
+						    line-height: 30px;
+						    color: #ba291f;
+						    font-size: 14px;
+						    background: #fff;
+						    border: 1px solid #ba291f;
+						    vertical-align: middle;
+    					}
+    					#cart_submit{
+    						font-size: 14px;
+						    height: 30px;
+						    line-height: 30px;
+						    width: 112px;
+					        display: inline-block;
+						    color: #fff;
+						    background: #7c0d02;
+						    text-align: center;
+						    text-decoration: none!important;
+						    vertical-align: middle;
+						    border: 0 none!important;
+						    cursor: pointer;
+						    font-weight: normal;
+						    outline: thin none transparent;
+    					}
+					}			    
+				}
+			}
 		}
     }
 }
