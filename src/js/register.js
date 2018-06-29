@@ -64,7 +64,13 @@ require(["config"],function(){
 				// }
 
 				/*数据库方式*/
-				$.post("http://localhost/");
+				$.post("http://localhost/Shiseido/src/php/register.php", $(".reg_form").serialize(), function(data){
+					if(data.res_code === 1){
+						location = "/html/login.html";
+					}else{
+						$(".error").text("用户注册失败" + data.res_message);
+					}
+				}, "json");
 			});
 		});
 	});	

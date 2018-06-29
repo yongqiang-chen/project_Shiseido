@@ -5,3 +5,118 @@ img{vertical-align: middle;}
 em,i,b,strong{ font-style:normal; font-weight:normal; }
 ul, ol { list-style:none; } 
 a {text-decoration:none; }
+
+.container{
+	width: 842px;
+	height: 416px;
+	margin: 40px auto;
+	.content{
+		.img{
+			width: 337px;
+			height: 337px;
+			float: left;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.prod-data{
+			width: 503px;
+			height: 398px;
+			float: left;
+			.up{
+				width: 503px;
+				height: 250px;
+				margin-bottom: 50px;
+				h3{
+					font-size: 20px;
+				    line-height: 33px;
+				    height: 33px;
+				    color: #000;
+				    width: 450px;
+				    margin-bottom: 5px;
+				    font-weight: normal;
+				}
+				h4{
+					font-size: 14px;
+				    color: #670205;
+				    line-height: 36px;
+				    height: 36px;
+				    border-bottom: 1px solid #a8a9ad;
+				}
+				.introduce{
+					padding-top: 10px;
+				    font-size: 14px;
+				    line-height: 18px;
+				    color: #202331;
+				}
+			}
+			.down{
+				width: 503px;
+				height: 91px;
+				.product-buy-quantity{
+					width: 503px;
+					height: 37px;
+					margin-bottom: 10px;
+					.shuliang{
+						margin-top: 7px;
+						width: 176px;
+						height: 28px;
+						float: left;
+						span{
+							display: inline-block;
+							width: 25px;
+							height: 25px;
+							border: 1px solid #a9a9a9;
+							background: #ccc;
+							text-align: center;
+						}
+						input{
+							width: 68px;
+							height: 24px;
+							border: 1px solid #a9a9a9;
+							text-align: center;
+							margin: 0 1px;
+						}
+					}
+					.jiage{
+						width: 111px;
+						height: 37px;
+						float: right;
+						text-align: center;
+						line-height: 37px;
+						font-size: 25px;
+						color: #670205;
+					}
+				}
+				.buy-operate{
+					width: 503px;
+					height: 35px;
+					.add_cart{
+						width: 128px;
+						height: 33px;
+						font-size: 14px;
+						line-height: 33px;
+						text-align: center;
+						color: #7c0d02;
+    					border: 1px solid #7c0d02!important;
+    					float: left;
+    					margin-right: 10px;
+    					margin-top: 10px;
+					}
+					.buy-now{
+						margin-top: 10px;
+						width: 128px;
+						height: 33px;
+						font-size: 14px;
+						line-height: 33px;
+						text-align: center;
+						float: left;
+						background: #7c0d02;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}

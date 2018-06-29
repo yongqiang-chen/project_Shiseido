@@ -24,14 +24,57 @@
 					<span>新增收货地址</span>
 				</div>
 				<table class="fill-shipping">
-					<tr></tr>
-					<tr></tr>
-					<tr></tr>
-					<tr></tr>
-					<tr></tr>
-					<tr></tr>
-					<tr></tr>
-					<tr></tr>
+					<tr>
+						<th>*收货人</th>
+						<td>
+							<input type="text" name="name">
+						</td>
+					</tr>
+					<tr>
+						<th>*收货地址</th>
+						<td>
+							<select id="province"><option>请选择省份</option></select>
+							<select id="city"><option>请选择城市</option></select>
+							<select id="district"><option>请选择区县</option></select>
+						</td>
+					</tr>
+					<tr>
+						<th>*详细地址</th>
+						<td>
+							<input type="text" name="addr">
+						</td>
+					</tr>
+					<tr>
+						<th>*邮编</th>
+						<td><input type="text" name="zip"></td>
+					</tr>
+					<tr>
+						<th>*手机号码</th>
+						<td><input type="text" name="mobile"></td>
+					</tr>
+					<tr>
+						<th>*固定电话</th>
+						<td><input type="text" name="tel"></td>
+					</tr>
+					<tr>
+						<th>收货时间</th>
+						<td>
+							<select>
+								<option value="无指定">无指定</option>
+								<option value="周一到周五">周一到周五</option>
+								<option value="周六">周六</option>
+								<option value="周日">周日</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th></th>
+						<td>
+							<button type="button" class="btn">
+								<span>确认收货信息</span>
+							</button>
+						</td>
+					</tr>
 				</table>
 			</div>
 		</div>
@@ -39,6 +82,6 @@
 
 	<div class="footer"></div>
 
-	<script type="text/javascript" src="../lib/requirejs/require.js" data-main="../js/detail"></script>
+	<script type="text/javascript" src="../lib/requirejs/require.js" data-main="../js/confirm"></script>
 </body>
 </html>

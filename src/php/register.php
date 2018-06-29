@@ -1,6 +1,6 @@
 <?php
 	//跨域
-	header(""Access-Control-Allow-Origin:*"");
+	header("Access-Control-Allow-Origin:*");
 	/* 注册 */
 	$username = $_POST["username"];
 	$password = $_POST["password"];

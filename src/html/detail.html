@@ -13,6 +13,62 @@
 
 	<div class="header_nav"></div>
 
+	<div class="container">
+		<!-- <div class="content">
+			<div class="img"><img src="/images/b (9).jpg"> </div>
+			<div class="prod-data">
+				<div class="up">
+					<h3>青春日和去角质洁面乳（豆腐磨砂膏）</h3>
+					<h4>75ml</h4>
+					<div class="introduce">
+						<span>详情：从豆腐的原料——大豆中提取丰富的卵磷脂成分，对肌肤及环境同样温和的去角质洁面乳。</span>
+					</div>
+				</div>
+				<div class="down">
+					<div class="product-buy-quantity">
+						<div class="shuliang">
+							<b>数量：</b><span>-</span><input type="text" value="1" class="amount"><span>+</span>
+						</div>
+						<div class="jiage">￥<span class="price">260</span></div>
+					</div>
+					<div class="buy-operate">
+						<div class="add_cart">加入购物车</div>
+						<div class="buy-now">立即购买</div>
+					</div>
+				</div>
+			</div>
+		</div>	 -->
+	</div>
+
+	<script type="text/html" id="detail_template">
+		{{each products prod}}
+			<div class="content">
+				<div class="img"><img src="{{prod.img}}"> </div>
+				<div class="prod-data">
+					<div class="up">
+						<h3>{{prod.title}}</h3>
+						<h4>{{prod.unit}}</h4>
+						<div class="introduce">
+							<span>{{prod.desc}}</span>
+						</div>
+					</div>
+					<div class="down">
+						<div class="product-buy-quantity">
+							<div class="shuliang">
+								<b>数量：</b><span>-</span><input type="text" value="1" class="amount"><span>+</span>
+							</div>
+							<div class="jiage">￥<span class="price">{{prod.price}}</span></div>
+						</div>
+						<div class="buy-operate">
+							<div class="add_cart">加入购物车</div>
+							<div class="buy-now">立即购买</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		{{/each}}
+	</script>
+
 	<div class="footer"></div>
 
 	<script type="text/javascript" src="../lib/requirejs/require.js" data-main="../js/detail"></script>

@@ -74,6 +74,15 @@ require(["config"],function(){
 			$(".op-cart-number").text(num);
 		});
 
+		//为详情绑定点击事件
+		$(".container").on("click", ".details", function(){
+			//获取当前宝贝数据加入到cookie
+			
+
+			//跳转页面到详情页
+			//location = "/html/detail.html";
+		});
+
 		//判断某ID商品是否已经选购过
 		function exist(id, products){
 			for(var i = 0, len = products.length; i < len; i++){
