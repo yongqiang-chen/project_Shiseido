@@ -31,7 +31,7 @@ require(["config"],function(){
 				_id = row.data("id");
 			var index = exist(_id,_products);
 			var prod = _products[index];
-			var num = $(".op-cart-number").text();
+			var num = $(".op-cart-number").text();//右上角购物车商品件数
 			if($(this).is(".add")){
 				prod.amount++;
 				num++;

@@ -16,8 +16,9 @@
 	$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
 	//执行sql语句
 	$result = mysql_query($sql);
+	$row=mysql_fetch_array($result,MYSQL_ASSOC);
 	// 判断
-	if ($result) { // 查询成功
+	if ($row) { // 查询成功
 		$arr = array("res_code"=>1, "res_message"=>"查询成功");
 		echo json_encode($arr);
 	} else { // 失败

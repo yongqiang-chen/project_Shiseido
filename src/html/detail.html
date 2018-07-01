@@ -41,9 +41,9 @@
 	</div>
 
 	<script type="text/html" id="detail_template">
-		{{each products prod}}
-			<div class="content">
-				<div class="img"><img src="{{prod.img}}"> </div>
+		{{each product prod}}
+			<div class="content" data-id="{{prod.id}}">
+				<div class="img"><img class="fdj_img" src="{{prod.img}}" data-zoom-image="/images/banner01.jpg"> </div>
 				<div class="prod-data">
 					<div class="up">
 						<h3>{{prod.title}}</h3>
@@ -55,9 +55,9 @@
 					<div class="down">
 						<div class="product-buy-quantity">
 							<div class="shuliang">
-								<b>数量：</b><span>-</span><input type="text" value="1" class="amount"><span>+</span>
+								<b>数量：</b><span class="minus">-</span><input type="text" value="{{prod.amount}}" class="amount"><span class="add">+</span>
 							</div>
-							<div class="jiage">￥<span class="price">{{prod.price}}</span></div>
+							<div class="jiage">￥<span class="price">{{(prod.price*prod.amount).toFixed(2)}}</span></div>
 						</div>
 						<div class="buy-operate">
 							<div class="add_cart">加入购物车</div>

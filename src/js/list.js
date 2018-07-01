@@ -16,7 +16,7 @@ require(["config"],function(){
 										.text(product.title).next(".p_unit")
 										.text(product.unit).next(".p_price").children("span")
 										.text(product.price).parent(".p_price").siblings(".id")
-										.text(product.id);
+										.text(product.id).siblings(".desc").text(product.desc);
 				});
 			},
 			error:function(err){
@@ -75,12 +75,37 @@ require(["config"],function(){
 		});
 
 		//为详情绑定点击事件
-		$(".container").on("click", ".details", function(){
+		$(".container").on("click", ".details", function(e){
 			//获取当前宝贝数据加入到cookie
+				//获取当前点击的“加入购物车”所在大盒子
+			var box = $(this).parent();
 			
+			//将当前选购商品信息保存到对象中
+			var currentProduct = {
+				id : box.children(".id").text(),
+				price : box.children(".p_price").children("span").text(),
+				title : box.children(".p_title").text(),
+				unit : box.children(".p_unit").text(),
+				img : box.children(".p_img").children("img").attr("src"),
+				desc : box.children(".desc").text(),
+				amount : 1
+			};
+
+			//将当前商品加入cookie
+			$.cookie.json = true;
+			//先读取已有的购物车cookie
+			var product = $.cookie("product") || [];
+			//判断该cookie是否有数据
+			if(!product){
+				product.push(currentProduct);
+			}else{
+				product.splice(0, 1, currentProduct);
+			}
+			//使用cookie保存购物车数据
+			$.cookie("product", product, {expires:7, path:"/"});
 
 			//跳转页面到详情页
-			//location = "/html/detail.html";
+			location = "/html/detail.html";
 		});
 
 		//判断某ID商品是否已经选购过
